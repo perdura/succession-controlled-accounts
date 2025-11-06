@@ -1,0 +1,34 @@
+[profile.default]
+via_ir = true
+optimizer = true
+optimizer_runs = 10000
+src = "contracts"
+out = "out"
+libs = ["lib"]
+test = "test"
+cache_path = "cache"
+evm_version = "cancun"
+remappings = [
+  "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+  "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+  "forge-std/=lib/forge-std/src/",
+]
+gas_reports = [
+    "ControllerNFT",
+    "SimpleSuccessionRegistry", 
+    "SimpleAccount",
+    "RegistryFactory",
+    "AccountFactory"
+]
+
+[profile.ci]
+src = "contracts"
+out = "out"
+libs = ["lib"]
+test = "test"
+cache_path = "cache"
+via_ir = true
+optimizer = true
+optimizer_runs = 10000
+evm_version = "cancun"
+verbosity = 3
