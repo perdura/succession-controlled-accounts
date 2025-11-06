@@ -662,9 +662,9 @@ forge coverage
 
 ## License
 
-Reference implementations are provided under the [MIT License](../LICENSE).
+Reference implementations are provided under the [MIT License](../../LICENSE).
 
-Interfaces are provided under [CC0-1.0](../LICENSE-INTERFACES) (Public Domain).
+Interfaces are provided under [CC0-1.0](../../LICENSE-INTERFACES) (Public Domain).
 
 ---
 
