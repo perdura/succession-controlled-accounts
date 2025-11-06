@@ -262,7 +262,7 @@ sequenceDiagram
     participant NFT1 as Alice's NFT
     participant Bob
     participant NFT2 as Bob's NFT
-    participant Carol
+    participant Charlie
     
     Note over Alice,Carol: Generation 1: Alice's successor is Bob
     Alice->>NFT1: Setup succession to Bob
@@ -277,7 +277,7 @@ sequenceDiagram
     NFT1->>Carol: Transfers Alice's assets
     NFT2->>Carol: Transfers Bob's assets
     
-    Note over Carol: Carol inherits both estates
+    Note over Charlie: Charlie inherits both estates
 ```
 
 ---
@@ -292,15 +292,10 @@ flowchart TB
     Registry[Succession Registry - Policy: Bob after 1 year]
     TBA1[TBA #1 - Owns BAYC #123 + 10 ETH]
     TBA2[TBA #2 - Owns CryptoPunk #456 + USDC]
-    NFT1[BAYC #123]
-    NFT2[CryptoPunk #456]
     
     CNFT -->|controls| TBA1
     CNFT -->|controls| TBA2
     CNFT <-->|authorized for transfers| Registry
-    
-    TBA1 -.->|owned by| NFT1
-    TBA2 -.->|owned by| NFT2
 ```
 
 **Succession Flow:**
