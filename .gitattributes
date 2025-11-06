@@ -1,0 +1,3 @@
+
+# Exclude dependencies from language statistics
+lib/** linguist-vendored
