@@ -8,9 +8,6 @@
 
 ## Quick Start
 ```bash
-# Install dependencies
-git submodule update --init --recursive
-
 # Run all tests
 forge test
 

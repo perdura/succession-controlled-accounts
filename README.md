@@ -61,7 +61,7 @@ The successor can claim after the inactivity period. You can check in periodical
 ## Documentation
 
 **Core Standard:**
-- [Draft Specification](./eip-succession-controlled-accounts.md) - The actual ERC proposal
+- [Draft Specification](./docs/eip-succession-controlled-accounts.md) - The actual ERC proposal
 - [Standard Interfaces](./contracts/interfaces/) - Interface definitions (CC0 licensed)
 - [Architecture Diagrams](./docs/Diagrams.md) - How it all fits together
 
@@ -80,7 +80,6 @@ The successor can claim after the inactivity period. You can check in periodical
 ```bash
 git clone https://github.com/perdura/succession-controlled-accounts
 cd succession-controlled-accounts
-git submodule update --init --recursive
 forge build
 ```
 
@@ -189,7 +188,7 @@ Interface definitions are public domain to encourage implementation diversity.
 
 ## Links
 
-- [Draft Specification](./eip-succession-controlled-accounts.md)
+- [Draft Specification](./docs/eip-succession-controlled-accounts.md)
 - [GitHub](https://github.com/perdura/succession-controlled-accounts)
 - [Ethereum Magicians Discussion](link-when-available)
 
