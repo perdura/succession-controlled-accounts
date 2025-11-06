@@ -1,0 +1,436 @@
+No files changed, compilation skipped
+
+Ran 14 tests for test/FactoryTests.t.sol:RegistryFactoryTest
+[PASS] test_CreateRegistry() (gas: 485199)
+[PASS] test_FactoryPausing() (gas: 582034)
+[PASS] test_GetControllerNFT() (gas: 7870)
+[PASS] test_GetImplementation() (gas: 8392)
+[PASS] test_GetRegistriesPaginated() (gas: 1338044)
+[PASS] test_RegistryAutoAuthorization() (gas: 476978)
+[PASS] test_RegistryCount() (gas: 916188)
+[PASS] test_RevertWhen_ConstructorZeroControllerNFT() (gas: 189259)
+[PASS] test_RevertWhen_ConstructorZeroImplementation() (gas: 189105)
+[PASS] test_RevertWhen_CreatingSecondRegistry() (gas: 513890)
+[PASS] test_RevertWhen_InvalidPageSize() (gas: 10534)
+[PASS] test_RevertWhen_NoControllerNFT() (gas: 45191)
+[PASS] test_RevertWhen_NonOwnerPauses() (gas: 35010)
+[PASS] test_UserRegistryMapping() (gas: 481868)
+Suite result: ok. 14 passed; 0 failed; 0 skipped; finished in 8.02ms (1.69ms CPU time)
+
+Ran 16 tests for test/FactoryTests.t.sol:AccountFactoryTest
+[PASS] test_AccountLimit() (gas: 6035925)
+[PASS] test_CreateAccount() (gas: 492028)
+[PASS] test_CreateMultipleAccounts() (gas: 940789)
+[PASS] test_FactoryPausing() (gas: 576428)
+[PASS] test_GetAccountCount() (gas: 905543)
+[PASS] test_GetAccountsPaginated() (gas: 1407824)
+[PASS] test_GetAccountsPaginated_EmptyRange() (gas: 8745)
+[PASS] test_GetControllerNFT() (gas: 7848)
+[PASS] test_GetImplementation() (gas: 8458)
+[PASS] test_GetMaxAccountsPerUser() (gas: 5512)
+[PASS] test_GetUserAccountCount() (gas: 715852)
+[PASS] test_RevertWhen_ConstructorZeroControllerNFT() (gas: 195086)
+[PASS] test_RevertWhen_ConstructorZeroImplementation() (gas: 194989)
+[PASS] test_RevertWhen_InvalidPageSize() (gas: 10603)
+[PASS] test_RevertWhen_NoControllerNFT() (gas: 45172)
+[PASS] test_RevertWhen_NonOwnerPauses() (gas: 35026)
+Suite result: ok. 16 passed; 0 failed; 0 skipped; finished in 9.58ms (3.35ms CPU time)
+
+Ran 17 tests for test/SecurityTests.t.sol:SecurityTests
+[PASS] test_AssetSweepProtectedFromReentrancy() (gas: 769092)
+[PASS] test_BeneficiaryCanBurnUnwantedTokens() (gas: 697003)
+[PASS] test_CloneCannotBeReinitialized() (gas: 530071)
+[PASS] test_DirectCloneInitializationCreatesUselessAccount() (gas: 717821)
+[PASS] test_EstateTransferProtectedFromReentrancy() (gas: 996530)
+[PASS] test_FactoryCannotAuthorizeWrongRegistry() (gas: 230470)
+[PASS] test_FactoryPreventsUnauthorizedInitialization() (gas: 503062)
+[PASS] test_ImplementationContractCannotBeInitialized() (gas: 73358)
+[PASS] test_InheritanceLimitPreventsStorageDOS() (gas: 4882092)
+[PASS] test_MinimumCheckInIntervalPreventSpam() (gas: 620525)
+[PASS] test_OnlyAuthorizedRegistriesCanTransferNFT() (gas: 229058)
+[PASS] test_OnlyBeneficiaryCanexecuteSuccession() (gas: 675573)
+[PASS] test_OnlyCurrentControllerCanSweepAssets() (gas: 554251)
+[PASS] test_OnlyOwnerCanCheckIn() (gas: 588145)
+[PASS] test_TrustedFactoryCanAuthorizeRegistries() (gas: 474959)
+[PASS] test_UntrustedFactoryCannotAuthorizeRegistries() (gas: 226019)
+[PASS] test_WaitPeriodPreventsPrematureClaims() (gas: 674115)
+Suite result: ok. 17 passed; 0 failed; 0 skipped; finished in 11.59ms (5.09ms CPU time)
+
+Ran 10 tests for test/IntegrationTests.t.sol:IntegrationTests
+[PASS] test_AccountInfoThroughSuccession() (gas: 959362)
+[PASS] test_CompleteEstateLifecycle() (gas: 1426729)
+[PASS] test_CrossFactoryIntegration() (gas: 1081460)
+[PASS] test_FactoryAuthorizationMechanism() (gas: 656482)
+[PASS] test_InheritanceLimitAcrossMultipleEstates() (gas: 6002085)
+[PASS] test_MixedAssetSuccession() (gas: 2218068)
+[PASS] test_MultipleAccountsInheritance() (gas: 2262234)
+[PASS] test_SpamTokenManagementWorkflow() (gas: 2715037)
+[PASS] test_StatusQueriesThroughLifecycle() (gas: 604139)
+[PASS] test_ThreeGenerationInheritance() (gas: 2630791)
+Suite result: ok. 10 passed; 0 failed; 0 skipped; finished in 14.72ms (10.29ms CPU time)
+
+Ran 24 tests for test/ControllerNFT.t.sol:ControllerNFTTest
+[PASS] test_AutoAuthorizeRegistryViaFactory() (gas: 475239)
+[PASS] test_BurnInheritedToken() (gas: 686653)
+[PASS] test_BurnOwnToken() (gas: 240641)
+[PASS] test_GetCurrentController_AfterBurn() (gas: 240462)
+[PASS] test_GetCurrentController_AfterSuccession() (gas: 648750)
+[PASS] test_GetCurrentController_NeverMinted() (gas: 10267)
+[PASS] test_GetCurrentController_NormalCase() (gas: 202151)
+[PASS] test_GetUserOwnedTokens_AfterBurn() (gas: 240491)
+[PASS] test_GetUserOwnedTokens_Multiple() (gas: 787393)
+[PASS] test_GetUserOwnedTokens_Single() (gas: 203232)
+[PASS] test_InheritanceLimit_MaxTokens() (gas: 4780067)
+[PASS] test_MintFirstNFT() (gas: 216958)
+[PASS] test_MintMultipleUsers() (gas: 562929)
+[PASS] test_NextTokenId_Increments() (gas: 384497)
+[PASS] test_OriginalTokenId_ZeroWhenNotMinted() (gas: 13658)
+[PASS] test_RevertWhen_ApprovingNFT() (gas: 219465)
+[PASS] test_RevertWhen_BurningOthersToken() (gas: 232645)
+[PASS] test_RevertWhen_FactoryAuthorizesWrongRegistry() (gas: 230268)
+[PASS] test_RevertWhen_MintingTwice() (gas: 222099)
+[PASS] test_RevertWhen_NonOwnerSetsTrustedFactory() (gas: 37678)
+[PASS] test_RevertWhen_TransferringNormally() (gas: 295298)
+[PASS] test_RevertWhen_UnauthorizedFactoryAuthorizes() (gas: 226100)
+[PASS] test_SetTrustedFactory() (gas: 96147)
+[PASS] test_TotalMinted_Increments() (gas: 385393)
+Suite result: ok. 24 passed; 0 failed; 0 skipped; finished in 14.73ms (8.30ms CPU time)
+
+Ran 32 tests for test/SimpleSuccessionRegistry.t.sol:SimpleSuccessionRegistryTest
+[PASS] test_BeneficiaryUpdateChangesWhoCanClaim() (gas: 258918)
+[PASS] test_CanExecuteSuccession_AfterWaitingPeriod() (gas: 71840)
+[PASS] test_CanExecuteSuccession_BeforeWaitingPeriod() (gas: 70582)
+[PASS] test_CheckIn() (gas: 118557)
+[PASS] test_CheckInResetsSuccessionTimer() (gas: 288245)
+[PASS] test_GetBeneficiary() (gas: 72616)
+[PASS] test_GetPolicy() (gas: 73418)
+[PASS] test_GetStatus_Claimable() (gas: 71925)
+[PASS] test_GetStatus_Configured() (gas: 77329)
+[PASS] test_GetStatus_NotConfigured() (gas: 15656)
+[PASS] test_OnlyFactoryCanInitialize() (gas: 232777)
+[PASS] test_PartialTransferWhenBeneficiaryAtCapacity() (gas: 4325019)
+[PASS] test_RegistryInitialization() (gas: 20614)
+[PASS] test_RevertWhen_AlreadyConfigured() (gas: 98033)
+[PASS] test_RevertWhen_CheckInNotConfigured() (gas: 39105)
+[PASS] test_RevertWhen_CheckInTooSoon() (gas: 158422)
+[PASS] test_RevertWhen_ExecuteTransferNotConfigured() (gas: 42784)
+[PASS] test_RevertWhen_InitializingImplementation() (gas: 40258)
+[PASS] test_RevertWhen_NonOwnerConfigures() (gas: 38863)
+[PASS] test_RevertWhen_NotBeneficiary() (gas: 100039)
+[PASS] test_RevertWhen_NotOwnerChecksIn() (gas: 92770)
+[PASS] test_RevertWhen_NotOwnerUpdatesBeneficiary() (gas: 95385)
+[PASS] test_RevertWhen_ReinitializingClone() (gas: 44044)
+[PASS] test_RevertWhen_TooEarlyTransfer() (gas: 213622)
+[PASS] test_RevertWhen_UpdateBeneficiaryNotConfigured() (gas: 41551)
+[PASS] test_RevertWhen_UpdateBeneficiaryToZero() (gas: 94677)
+[PASS] test_RevertWhen_ZeroBeneficiary() (gas: 40322)
+[PASS] test_UpdateBeneficiary() (gas: 110179)
+[PASS] test_executeSuccession_OneYear() (gas: 186775)
+[PASS] test_executeSuccession_SixMonths() (gas: 186629)
+[PASS] test_setupSimplePolicy_OneYear() (gas: 70942)
+[PASS] test_setupSimplePolicy_SixMonths() (gas: 73465)
+Suite result: ok. 32 passed; 0 failed; 0 skipped; finished in 7.89ms (7.55ms CPU time)
+
+Ran 17 tests for test/EdgeCaseTests.t.sol:EdgeCaseTests
+[PASS] test_BeneficiaryUpdateDuringWaitingPeriod() (gas: 717792)
+[PASS] test_CannotUseUnconfiguredRegistry() (gas: 533476)
+[PASS] test_CheckInAfterWaitingPeriodResetsTimer() (gas: 747870)
+[PASS] test_ConcurrentInheritanceToSameBeneficiary() (gas: 1351992)
+[PASS] test_ConcurrentRegistryCreationPrevented() (gas: 515196)
+[PASS] test_EmptyAccountSuccession() (gas: 930463)
+[PASS] test_FactoryRejectsZeroImplementation() (gas: 379085)
+[PASS] test_FactoryUseAfterBurn() (gas: 1061266)
+[PASS] test_MaximumAccountsPerUser() (gas: 6036126)
+[PASS] test_OneTokenSuccessionGas() (gas: 651560)
+[PASS] test_PaginationBoundaries() (gas: 4348178)
+[PASS] test_PaginationRejectsOversizedPages() (gas: 21226)
+[PASS] test_RapidAccountCreationProducesUniqueAddresses() (gas: 1391459)
+[PASS] test_SequentialTokenIdIncrement() (gas: 1759718)
+[PASS] test_SingleSuccession_MaxTokenTransfer() (gas: 5677005)
+[PASS] test_TokenTrackingAfterBurn() (gas: 252427)
+[PASS] test_TwoTokenSuccessionGas() (gas: 1290203)
+Suite result: ok. 17 passed; 0 failed; 0 skipped; finished in 17.21ms (15.34ms CPU time)
+
+Ran 23 tests for test/NFTLinkedTests.t.sol:NFTLinkedTest
+[PASS] testFuzz_HasSuccessionWithRandomController(address) (runs: 256, μ: 176604, ~: 177756)
+[PASS] testFuzz_InitializeWithRandomAddresses(address,address) (runs: 256, μ: 462656, ~: 462820)
+[PASS] testFuzz_OnlyControllerWithRandomCaller(address) (runs: 256, μ: 180842, ~: 180842)
+[PASS] test_CompleteLifecycle() (gas: 825855)
+[PASS] test_EdgeCase_RapidControllerChanges() (gas: 592898)
+[PASS] test_EdgeCase_ZeroAddressCannotCallRestricted() (gas: 160996)
+[PASS] test_GetControllerNFT() (gas: 80536)
+[PASS] test_GetCurrentNFTController_Variations() (gas: 268052)
+[PASS] test_GetOriginalHolder() (gas: 78649)
+[PASS] test_HasSuccessionOccurred_AfterBurn() (gas: 255370)
+[PASS] test_HasSuccessionOccurred_DifferentController() (gas: 177061)
+[PASS] test_HasSuccessionOccurred_NoController() (gas: 85747)
+[PASS] test_HasSuccessionOccurred_SameController() (gas: 177763)
+[PASS] test_InitializeEmitsEvent() (gas: 79915)
+[PASS] test_InitializeNFTLinking_Success() (gas: 85738)
+[PASS] test_MultipleLinkedContracts() (gas: 1744049)
+[PASS] test_OnlyController_AfterSuccession() (gas: 195753)
+[PASS] test_OnlyController_NoController() (gas: 105435)
+[PASS] test_OnlyController_Revert() (gas: 180909)
+[PASS] test_OnlyController_Success() (gas: 180519)
+[PASS] test_RevertWhen_InitializeTwice() (gas: 103575)
+[PASS] test_RevertWhen_InitializeWithZeroControllerNFT() (gas: 32934)
+[PASS] test_RevertWhen_InitializeWithZeroOriginalHolder() (gas: 34325)
+Suite result: ok. 23 passed; 0 failed; 0 skipped; finished in 23.22ms (28.43ms CPU time)
+
+Ran 56 tests for test/SimpleAccount.t.sol:SimpleAccountTest
+[PASS] testFuzz_ERC1155Amounts(uint256) (runs: 256, μ: 141233, ~: 141349)
+[PASS] testFuzz_SweepERC20Amounts(uint256) (runs: 256, μ: 139152, ~: 139522)
+[PASS] testFuzz_SweepNativeAmounts(uint256) (runs: 256, μ: 55432, ~: 55581)
+[PASS] test_AccountInitialization() (gas: 52085)
+[PASS] test_ControllerChangeAfterSuccession() (gas: 568301)
+[PASS] test_GetAccountInfo() (gas: 26767)
+[PASS] test_GetBalances() (gas: 69267)
+[PASS] test_GetTokenBalanceZeroAddress() (gas: 12316)
+[PASS] test_MultipleAccountsAfterSuccession() (gas: 1120645)
+[PASS] test_OnERC1155BatchReceived() (gas: 11761)
+[PASS] test_OnERC1155Received() (gas: 10009)
+[PASS] test_OnERC721Received() (gas: 9516)
+[PASS] test_ReceiveNative() (gas: 43237)
+[PASS] test_ReceiveNativeEmitsEvent() (gas: 45807)
+[PASS] test_ReentrancyProtectionOnSweepNative() (gas: 847178)
+[PASS] test_RevertWhen_InitializeCalledOnImplementation() (gas: 41242)
+[PASS] test_RevertWhen_InitializingTwice() (gas: 43409)
+[PASS] test_RevertWhen_NativeSendFails() (gas: 182037)
+[PASS] test_RevertWhen_NotControllerSweepsERC1155() (gas: 101013)
+[PASS] test_RevertWhen_NotControllerSweepsERC1155Batch() (gas: 53871)
+[PASS] test_RevertWhen_NotControllerSweepsERC20() (gas: 99678)
+[PASS] test_RevertWhen_NotControllerSweepsERC721() (gas: 99468)
+[PASS] test_RevertWhen_NotControllerSweepsNative() (gas: 47026)
+[PASS] test_RevertWhen_NotFactoryInitializes() (gas: 1508866)
+[PASS] test_RevertWhen_SendToZeroAddress() (gas: 51332)
+[PASS] test_RevertWhen_SweepAllERC20ZeroToken() (gas: 54147)
+[PASS] test_RevertWhen_SweepERC1155BatchZeroRecipient() (gas: 59376)
+[PASS] test_RevertWhen_SweepERC1155BatchZeroToken() (gas: 57294)
+[PASS] test_RevertWhen_SweepERC1155ZeroRecipient() (gas: 56564)
+[PASS] test_RevertWhen_SweepERC1155ZeroToken() (gas: 54570)
+[PASS] test_RevertWhen_SweepERC20ZeroRecipient() (gas: 55493)
+[PASS] test_RevertWhen_SweepERC20ZeroToken() (gas: 53653)
+[PASS] test_RevertWhen_SweepERC721ZeroRecipient() (gas: 55883)
+[PASS] test_RevertWhen_SweepERC721ZeroToken() (gas: 53405)
+[PASS] test_RevertWhen_ZeroAddressInitialization() (gas: 1535884)
+[PASS] test_SupportsInterface() (gas: 15218)
+[PASS] test_SupportsInterfaceReturnsFalse() (gas: 9557)
+[PASS] test_SweepAllERC20() (gas: 129370)
+[PASS] test_SweepAllERC20WhenEmpty() (gas: 58430)
+[PASS] test_SweepAllNative() (gas: 56821)
+[PASS] test_SweepAllNativeWhenEmpty() (gas: 46385)
+[PASS] test_SweepERC1155() (gas: 144070)
+[PASS] test_SweepERC1155Batch() (gas: 274373)
+[PASS] test_SweepERC1155BatchEmptyArrays() (gas: 57537)
+[PASS] test_SweepERC1155ZeroAmount() (gas: 113656)
+[PASS] test_SweepERC20() (gas: 138728)
+[PASS] test_SweepERC20EmitsEvent() (gas: 134031)
+[PASS] test_SweepERC20Max() (gas: 130793)
+[PASS] test_SweepERC20ZeroAmount() (gas: 106906)
+[PASS] test_SweepERC721() (gas: 113170)
+[PASS] test_SweepERC721EmitsEvent() (gas: 111068)
+[PASS] test_SweepNative() (gas: 57253)
+[PASS] test_SweepNativeEmitsEvent() (gas: 56093)
+[PASS] test_SweepNativeMax() (gas: 57840)
+[PASS] test_SweepNativeMoreThanBalance() (gas: 106119)
+[PASS] test_SweepNativeZeroAmount() (gas: 46697)
+Suite result: ok. 56 passed; 0 failed; 0 skipped; finished in 41.99ms (39.45ms CPU time)
+
+╭--------------------------------------------------------------+-----------------+--------+--------+--------+---------╮
+| contracts/reference/ControllerNFT.sol:ControllerNFT Contract |                 |        |        |        |         |
++=====================================================================================================================+
+| Deployment Cost                                              | Deployment Size |        |        |        |         |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| 1881842                                                      | 8929            |        |        |        |         |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                                              |                 |        |        |        |         |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| Function Name                                                | Min             | Avg    | Median | Max    | # Calls |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| MAX_INHERITED_TOKENS                                         | 268             | 268    | 268    | 268    | 82      |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| approve                                                      | 277             | 277    | 277    | 277    | 1       |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| authorizeRegistry                                            | 24900           | 26413  | 26413  | 27927  | 4       |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| burn                                                         | 23767           | 35821  | 41618  | 49609  | 11      |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getCurrentController                                         | 1068            | 5048   | 5068   | 5068   | 1165    |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getUserOwnedTokens                                           | 2936            | 7670   | 5207   | 23376  | 177     |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| hasMinted                                                    | 2575            | 2575   | 2575   | 2575   | 295     |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| isAuthorizedRegistry                                         | 2816            | 2816   | 2816   | 2816   | 5       |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| isTrustedFactory                                             | 2839            | 2839   | 2839   | 2839   | 2       |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| mint                                                         | 23482           | 179467 | 185933 | 185933 | 242     |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| nextTokenId                                                  | 2635            | 2635   | 2635   | 2635   | 6       |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| originalTokenId                                              | 3112            | 3112   | 3112   | 3112   | 93      |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| ownerOf                                                      | 2635            | 2651   | 2656   | 2656   | 10      |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| safeTransferFrom(address,address,uint256)                    | 27092           | 27092  | 27092  | 27092  | 2       |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| safeTransferFrom(address,address,uint256,bytes)              | 27957           | 27957  | 27957  | 27957  | 1       |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| setApprovalForAll                                            | 759             | 759    | 759    | 759    | 1       |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| setTrustedFactory                                            | 24383           | 47763  | 47978  | 47978  | 212     |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| totalMinted                                                  | 2789            | 2789   | 2789   | 2789   | 6       |
+|--------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| transferFrom                                                 | 26904           | 26904  | 26904  | 26904  | 1       |
+╰--------------------------------------------------------------+-----------------+--------+--------+--------+---------╯
+
+╭------------------------------------------------------------------+-----------------+--------+--------+--------+---------╮
+| contracts/reference/RegistryFactory.sol:RegistryFactory Contract |                 |        |        |        |         |
++=========================================================================================================================+
+| Deployment Cost                                                  | Deployment Size |        |        |        |         |
+|------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| 803743                                                           | 3710            |        |        |        |         |
+|------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                                                  |                 |        |        |        |         |
+|------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| Function Name                                                    | Min             | Avg    | Median | Max    | # Calls |
+|------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| createRegistry                                                   | 28617           | 256517 | 271976 | 271976 | 139     |
+|------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getControllerNFT                                                 | 231             | 231    | 231    | 231    | 1       |
+|------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getImplementation                                                | 407             | 407    | 407    | 407    | 1       |
+|------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getRegistriesPaginated                                           | 190             | 7019   | 6751   | 15828  | 8       |
+|------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getRegistryCount                                                 | 2448            | 2448   | 2448   | 2448   | 3       |
+|------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| paused                                                           | 2394            | 2394   | 2394   | 2394   | 1       |
+|------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| setPaused                                                        | 23581           | 31702  | 24807  | 46719  | 3       |
+|------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| userRegistry                                                     | 528             | 863    | 528    | 2528   | 161     |
+╰------------------------------------------------------------------+-----------------+--------+--------+--------+---------╯
+
+╭------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------╮
+| contracts/reference/SimpleSuccessionRegistry.sol:SimpleSuccessionRegistry Contract |                 |       |        |        |         |
++==========================================================================================================================================+
+| Deployment Cost                                                                    | Deployment Size |       |        |        |         |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| 1368347                                                                            | 6223            |       |        |        |         |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+|                                                                                    |                 |       |        |        |         |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| Function Name                                                                      | Min             | Avg   | Median | Max    | # Calls |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| canExecuteSuccession                                                               | 2760            | 2760  | 2760   | 2760   | 2       |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| checkIn                                                                            | 2337            | 6369  | 8502   | 8502   | 17      |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| controllerNFT                                                                      | 2349            | 2349  | 2349   | 2349   | 1       |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| executeSuccession                                                                  | 397             | 95033 | 98628  | 442418 | 90      |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| getBeneficiary                                                                     | 2372            | 2372  | 2372   | 2372   | 1       |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| getPolicy                                                                          | 3071            | 3071  | 3071   | 3071   | 6       |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| getStatus                                                                          | 2719            | 2971  | 3044   | 3078   | 8       |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| initialize                                                                         | 2873            | 90499 | 92769  | 92769  | 139     |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| owner                                                                              | 460             | 503   | 460    | 2460   | 137     |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| setupSimplePolicy                                                                  | 2653            | 26669 | 27354  | 27354  | 102     |
+|------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| updateBeneficiary                                                                  | 2377            | 6126  | 4543   | 8978   | 7       |
+╰------------------------------------------------------------------------------------+-----------------+-------+--------+--------+---------╯
+
+╭----------------------------------------------------------------------+-----------------+--------+--------+--------+---------╮
+| contracts/reference/vault/AccountFactory.sol:AccountFactory Contract |                 |        |        |        |         |
++=============================================================================================================================+
+| Deployment Cost                                                      | Deployment Size |        |        |        |         |
+|----------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| 883981                                                               | 4082            |        |        |        |         |
+|----------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                                                      |                 |        |        |        |         |
+|----------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| Function Name                                                        | Min             | Avg    | Median | Max    | # Calls |
+|----------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| createAccount                                                        | 28639           | 243538 | 266493 | 266493 | 152     |
+|----------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getAccountCount                                                      | 2561            | 2561   | 2561   | 2561   | 3       |
+|----------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getAccountsPaginated                                                 | 259             | 4405   | 2658   | 10711  | 5       |
+|----------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getControllerNFT                                                     | 209             | 209    | 209    | 209    | 1       |
+|----------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getImplementation                                                    | 495             | 495    | 495    | 495    | 1       |
+|----------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getMaxAccountsPerUser                                                | 279             | 279    | 279    | 279    | 3       |
+|----------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getUserAccountCount                                                  | 2640            | 2640   | 2640   | 2640   | 4       |
+|----------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| getUserAccounts                                                      | 3069            | 6481   | 6481   | 9894   | 4       |
+|----------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| paused                                                               | 2416            | 2416   | 2416   | 2416   | 1       |
+|----------------------------------------------------------------------+-----------------+--------+--------+--------+---------|
+| setPaused                                                            | 23559           | 31680  | 24785  | 46697  | 3       |
+╰----------------------------------------------------------------------+-----------------+--------+--------+--------+---------╯
+
+╭--------------------------------------------------------------------+-----------------+-------+--------+--------+---------╮
+| contracts/reference/vault/SimpleAccount.sol:SimpleAccount Contract |                 |       |        |        |         |
++==========================================================================================================================+
+| Deployment Cost                                                    | Deployment Size |       |        |        |         |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| 1438077                                                            | 6548            |       |        |        |         |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+|                                                                    |                 |       |        |        |         |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| Function Name                                                      | Min             | Avg   | Median | Max    | # Calls |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| getAccountInfo                                                     | 14645           | 14645 | 14645  | 14645  | 3       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| getControllerNFT                                                   | 2432            | 2432  | 2432   | 2432   | 2       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| getCurrentNFTController                                            | 12649           | 12649 | 12649  | 12649  | 28      |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| getNativeBalance                                                   | 430             | 430   | 430    | 430    | 2       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| getOriginalHolder                                                  | 2301            | 2301  | 2301   | 2301   | 4       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| getTokenBalance                                                    | 734             | 3234  | 3234   | 5734   | 2       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| hasSuccessionOccurred                                              | 12642           | 12642 | 12642  | 12642  | 3       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| initialize                                                         | 3114            | 90191 | 94157  | 94157  | 156     |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| onERC1155BatchReceived                                             | 1225            | 1225  | 1225   | 1225   | 1       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| onERC1155Received                                                  | 909             | 909   | 909    | 909    | 1       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| onERC721Received                                                   | 572             | 572   | 572    | 572    | 1       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| receive                                                            | 1479            | 1479  | 1479   | 1479   | 2       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| supportsInterface                                                  | 251             | 283   | 290    | 303    | 4       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| sweepAllERC20                                                      | 18075           | 36046 | 37385  | 51341  | 4       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| sweepAllNative                                                     | 2038            | 24112 | 26011  | 26011  | 17      |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| sweepERC1155                                                       | 12971           | 51110 | 51778  | 51778  | 261     |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| sweepERC1155Batch                                                  | 13523           | 36466 | 18676  | 107749 | 5       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| sweepERC20                                                         | 12814           | 50370 | 51299  | 51299  | 263     |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| sweepERC721                                                        | 12902           | 23824 | 28278  | 28392  | 8       |
+|--------------------------------------------------------------------+-----------------+-------+--------+--------+---------|
+| sweepNative                                                        | 2523            | 26161 | 26451  | 55813  | 270     |
+╰--------------------------------------------------------------------+-----------------+-------+--------+--------+---------╯
+
+
+Ran 9 test suites in 376.45ms (148.95ms CPU time): 209 tests passed, 0 failed, 0 skipped (209 total tests)
